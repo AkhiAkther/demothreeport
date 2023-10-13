@@ -5,10 +5,11 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { navigation } from '@/constants/data'
 import {Menu,X} from 'lucide-react'
+import { usePathname } from 'next/navigation'
 
 const Header = () => {
     const [show, setShow]=useState(false)
-    console.log(show);
+    const pathname = usePathname()
     
   return (
     
@@ -22,8 +23,8 @@ const Header = () => {
                 navigation.map((item)=>(
                     <Link key={item.title} href={item.href}>
             
-                    <li className='font-semibold  text-zinc-300 hover:text-white cursor-pointer duration-300 relative group overflow-hidden'>{item.title}
-                        <span className='h-[1px] w-full inline-flex bg-white absolute left-0 bottom-0 -translate-x-[100%] group-hover:translate-x-0 transition-transform duration-300'/>
+                    <li className={`font-semibold  text-zinc-300  cursor-pointer duration-300 relative group overflow-hidden ${pathname === item.href && "text-pink-600"}`}>{item.title}
+                        <span className={`h-[1px] w-full inline-flex bg-white absolute left-0 bottom-0 -translate-x-[105%] group-hover:translate-x-0 transition-transform duration-300 ${pathname === item.href && "translate-x-0"}`}/>
                         </li>
                     </Link>
                 ))
@@ -38,13 +39,13 @@ const Header = () => {
            </div>
           {
             show && (
-                <ul className='absolute right-0 px-10 py-6 top-20 inline-flex md:hidden flex-col bg-pink-900 items-start justify-center gap-5 text-white'>
+                <ul className='absolute right-0 px-10 py-6 top-20 inline-flex md:hidden flex-col bg-zinc-200 items-start justify-center gap-5 text-zinc-800'>
                 {
                     navigation.map((item)=>(
-                        <Link key={item.title} href={item.href}>
+                        <Link key={item.title} href={item.href} target={item?.target}>
                 
-                        <li className='font-semibold  hover:text-white cursor-pointer duration-300 relative group overflow-hidden'>{item.title}
-                            <span className='h-[1px] w-full inline-flex bg-white absolute left-0 bottom-0 -translate-x-[100%] group-hover:translate-x-0 transition-transform duration-300'/>
+                        <li className='font-semibold  hover:text-black cursor-pointer duration-300 relative group overflow-hidden'>{item.title}
+                            <span className='h-[1px] w-full inline-flex bg-black absolute left-0 bottom-0 -translate-x-[100%] group-hover:translate-x-0 transition-transform duration-300'/>
                             </li>
                         </Link>
                     ))

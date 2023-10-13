@@ -4,10 +4,13 @@ import Title from './Title'
 
 const AboutMe = () => {
   return (
-  <Container className='bg-zinc-100 text-black p-4 border border-zinc-400'>
-  <Title title='About Me'/>
-    <p  className=" text-base mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas voluptatem inventore ipsam amet rem expedita facilis vel suscipit illo tempora, minus error earum odit libero nobis id beatae corporis ut doloribus nesciunt fugit debitis iure? Quaerat sequi unde veritatis cupiditate!Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas voluptatem inventore ipsam amet rem expedita facilis vel suscipit illo tempora, minus error earum odit libero nobis id beatae corporis ut doloribus nesciunt fugit debitis iure? Quaerat sequi unde veritatis cupiditate!Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas voluptatem inventore ipsam amet rem expedita facilis vel suscipit illo tempora, minus error earum odit libero nobis id beatae corporis ut doloribus nesciunt fugit debitis iure? Quaerat sequi unde veritatis cupiditate!Lorem ipsum dolor sit</p>
-  </Container>
+  <section id='aboutme'>
+    <Container>
+      <Title title='About Me'/>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias ducimus illo assumenda quas voluptatibus accusantium, voluptates officia voluptatem, beatae saepe atque eligendi? Delectus perferendis, dignissimos commodi atque doloribus fuga exercitationem ipsum officia totam similique aut voluptatem possimus minima at libero illo quos, quod earum deserunt! Aut vel maiores iste laboriosam!</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat reiciendis laborum numquam quidem aspernatur asperiores rerum tempora debitis officia fuga?</p>
+    </Container>
+  </section>
   )
 }
 

@@ -8,7 +8,8 @@ import { servicesDetails } from '@/constants/data'
 const MyServices = () => {
   return (
    
-    <Container className='border border-zinc-400 mt-10 bg-zinc-100 px-5'>
+   <section id='myservices'>
+     <Container className='border border-zinc-400 mt-10 bg-zinc-100 px-5'>
         <Title title='My Services'/>
         <div className='grid grid-cols-3 gap-10 mt-10 '>
             {
@@ -25,6 +26,7 @@ const MyServices = () => {
             }
         </div>
     </Container>
+   </section>
   )
 }
 

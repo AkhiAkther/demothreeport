@@ -4,7 +4,8 @@ export const navigation = [
     {title:"Home", href:"/"},
     {title:"Portfolio", href:"/portfolio"},
     {title:"Services", href:"/services"},
-    {title:"Resume", href:"/resume"},
+    {title:"Blog", href:"/blog"},
+    {title:"Resume", href:"/resume.pdf" ,target:"_"},
     {title:"Contact", href:"/contact"}
 ]
 export const services = [
@@ -12,7 +13,8 @@ export const services = [
     {title:"Web Devlopment"},
     {title:"Mern Stack Devlopment"},
     {title:"Creating Articles"},
-    {title:"E-Commerce Project"}
+    {title:"E-Commerce Project"},
+    {title:"UI Design"}
 ]
 export const contacts = [
     {title:"Facebook",icon:Facebook, href:"https://www.facebook.com/profile.php?id=100064316097104"},
