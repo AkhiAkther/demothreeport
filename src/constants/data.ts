@@ -1,6 +1,8 @@
 import { Facebook,Instagram,Twitter,Linkedin,AppWindow, FileJson, AlertCircle, PenSquare, ShoppingBag,Brush  } from "lucide-react"
-
-export const navigation = [
+import XYZImg from '@/assest/exprience/xyz.jpg'
+import BrainStation from '@/assest/exprience/brain station.png'
+import ollyoImg from '@/assest/exprience/ollyo.png'
+export const navigation=[
     {title:"Home", href:"/"},
     {title:"Portfolio", href:"/portfolio"},
     {title:"Services", href:"/services"},
@@ -8,6 +10,8 @@ export const navigation = [
     {title:"Resume", href:"/resume.pdf" ,target:"_"},
     {title:"Contact", href:"/contact"}
 ]
+    
+
 export const services = [
     {title:"Web Design"},
     {title:"Web Devlopment"},
@@ -50,4 +54,30 @@ export const servicesDetails =[
 },
    
 
+]
+export const experience =[
+    {title:"Web Devloper",
+    position:"Intern",
+   company:"XYZ.com",
+   duration:"January 2022-June 2022",
+   logo:XYZImg,
+   href:''
+
+},
+    {title:"Front-end Developer",
+    position:"Intern",
+   company:"Brain Station",
+   duration:"July 2022-December 2022",
+   logo:BrainStation,
+   href:''
+
+},
+    {title:"Full-Stack Developer",
+    position:"Intern",
+   company:"ollyo",
+   duration:"January2023-March-2023",
+   logo:ollyoImg,
+   href:""
+
+},
 ]
